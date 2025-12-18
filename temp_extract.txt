@@ -1,0 +1,76 @@
+﻿
+
+- Update the utility class:
+  .h-8 {
+      height: 2.5rem;
+  }
+
+- Update the CSS variable:
+  --brand-orange: 267 25 37;
+
+- Extend `.max-w-4xl` without changing its max width:
+  .max-w-4xl {
+      max-width: 56rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+
+Button Behavior Updates (HTML only in `course/**/index1.html`):
+
+- Add click/navigation behavior to all “Enroll Now” buttons:
+  - Navbar “Enroll Now”
+  - “Ready to Start Your Journey?” section’s “Enroll Now”
+
+- Replace their behavior with this WhatsApp link:
+ <a href="https://wa.me/918128166631" class="hover:text-white transition-smooth">WhatsApp:
+                    8128166631</a>
+
+
+<a href="tel:+918128166631" class="hover:text-white transition-smooth">+918128166631</a>
+
+<a href="mailto:support@angelMultimedia.com" class="hover:text-white transition-smooth">support@angelMultimedia.com</a>
+
+<a href="https://www.google.com/maps/place/Angel+Multimedia+Institute/@21.2020928,72.8545194,17z/data=!3m1!4b1!4m6!3m5!1s0x3be04f007f6e7725:0x5d30056aa1a07c4!8m2!3d21.2020928!4d72.8545194!16s%2Fg%2F1tdmt2dp?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D" class="hover:text-white transition-smooth">Surat, Gujarat, India</a>
+Call Button Update:
+
+- Modify the existing Call button so the phone number is clickable:
+  <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 rounded-md bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary text-base sm:text-xl px-6 sm:px-10 py-5 sm:py-7 backdrop-blur-sm hover-scale">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone mr-2 h-5 w-5 sm:h-6 sm:w-6">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+    <a href="tel:+918128166631" class="hover:text-black transition-smooth">
+      Call: 8128166631
+    </a>
+  </button>
+
+<a class="bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-2 rounded-lg font-semibold transition-all shadow-glow hover-scale" href="https://wa.me/918128166631">Enroll Now</a>
+
+<a href="mailto:support@angelMultimedia.com" class="hover:text-white transition-smooth">support@angelMultimedia.com</a>
+<a href="tel:+918128166631" class="hover:text-black transition-smooth">Call: 8128166631</a>
+
+<a href="https://wa.me/918128166631" class="hover:text-white transition-smooth">WhatsApp:8128166631<span></span></a>
+
+Contact Information Section (with Click Actions):
+
+- WhatsApp: 8128166631 → https://wa.me/918128166631
+- Call: 8128166631 → tel:+918128166631
+- Email: support@angelMultimedia.com → mailto:support@angelMultimedia.com
+
+Apply these updates to both:
+- Footer-style contact display:
+  WhatsApp: 8128166631
+  Call: 8128166631
+  support@angelMultimedia.com
+
+- “Contact Us” section:
+  Contact Us
+  +918128166631
+  WhatsApp: 8128166631
+  support@angelMultimedia.com
+
+Each item must be clickable and perform its appropriate action.
+
+Constraints:
+- Do not alter navbar structure or layout.
+- Do not change unrelated styles or scripts.
+- All changes must remain scoped to `course/**/index1.html`.
